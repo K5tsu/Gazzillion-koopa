@@ -1,6 +1,3 @@
 # Gazzillion-Koopa
-The illest rootkit
-
-customisable so be free to do whatever
-
-has stuff ranging from ransomware to backdoors
+cool rootkit that opens a backdoor that can spawn a reverse shell to a remote host
+launch malware and more
