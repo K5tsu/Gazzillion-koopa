@@ -11,4 +11,5 @@ instructions:
 4. build koopa by typing "make"
 5. load koopa in the kernel and configure environment(thats where malware modules will be)
 6. sudo ./install.sh
-6(1). if you already ran the script and want to install koopa then sudo insmod ./koopa.ko
+7. if you already ran the script and want to install koopa then sudo insmod ./koopa.ko
+8. to unload sudo rmmod koopa but make sure it's not invisible
