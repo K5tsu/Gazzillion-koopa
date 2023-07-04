@@ -45,7 +45,7 @@ void operate_dir(const char* dir_name, int indent, int mode){
 int toy_encrypt(const char* file_name){
     char temp_copy_file_name [1024];
     strcpy(temp_copy_file_name, file_name);
-    strcat (temp_copy_file_name, ".ubr\0");
+    strcat (temp_copy_file_name, ".kop\0");
 
     FILE *file = fopen(file_name, "r");
     FILE *file_copy = fopen(temp_copy_file_name, "w");
