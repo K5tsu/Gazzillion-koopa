@@ -6,7 +6,7 @@ launch malware and more
 instructions:
 1. download your kernel header files
 [apt install linux-headers-$(uname -r)]
-2. dir examples in the discord
+2. dir examples in config.json
 3. clone the project and cd  Gazzillion-Koopa
 4. build koopa by typing "make"
 5. load koopa in the kernel and configure environment(thats where malware modules will be)
